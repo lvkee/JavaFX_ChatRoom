@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0"
+      prefWidth="506.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.SampleController">
+    <children>
+        <Label fx:id="label_prompt" layoutX="225.0" layoutY="176.0" text="当前状态: 服务未开启"/>
+        <Label fx:id="label_count" layoutX="19.0" layoutY="176.0" text="当前客户端连接数:"/>
+        <TextArea fx:id="textArea_listener" editable="false" layoutX="19.0" layoutY="50.0" maxWidth="466.0"
+                  minWidth="0.0" prefHeight="109.0" prefWidth="466.0" wrapText="true"/>
+        <Button fx:id="button_save" layoutX="340.0" layoutY="8.0" lineSpacing="5.0" mnemonicParsing="false"
+                onAction="#pressToSave" prefHeight="36.0" prefWidth="138.0" text="保存消息记录"/>
+        <Button fx:id="button_port" layoutX="217.0" layoutY="8.0" mnemonicParsing="false" onAction="#setOnAction"
+                prefHeight="36.0" prefWidth="94.0" text="设置"/>
+        <TextField fx:id="textField_port" layoutX="68.0" layoutY="8.0" prefHeight="36.0" prefWidth="138.0"
+                   promptText="端口号"/>
+        <Label fx:id="label_port" layoutX="14.0" layoutY="14.0" text="端口："/>
+    </children>
+</Pane>
